@@ -264,7 +264,7 @@
           </span>
         </a>
 
-        <div class="admin-links" *ngIf="authService?.isAdmin">
+        <div class="admin-links" *ngIf="authService?.canAccessAdminDashboard">
           <a aria-labelledby="Link to admin dashboard"
             routerLink="/admin"
             [ngClass]="activePage === ADMIN_SPACE ? 'link-active' : 'link-inactive'"
